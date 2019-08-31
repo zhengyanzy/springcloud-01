@@ -1,0 +1,12 @@
+server:
+  port: 8091
+
+eureka:
+  instance:
+    hostname: eurekaserver8091.com
+  client:
+    registerWithEureka: false
+    fetchRegistry: false
+    serviceUrl:
+      #指定其他的eureka server服务器,多个服务用,分割
+      defaultZone: http://eurekaserver8090.com:8090/eureka/

@@ -1,0 +1,12 @@
+server:
+  port: 8090
+
+eureka:
+  instance:
+    hostname: eurekaserver8090.com
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+    service-url:
+      #指定其他的eureka server服务器,多个服务用,分割（这里电脑内存不够,就开一个eureka,8091的微服务就需要启动了,注意后面provider启动会报错,原因是我们只开了一个eureka,我们可以忽略报错）
+      defaultZone: http://eurekaserver8090.com:8090/eureka/

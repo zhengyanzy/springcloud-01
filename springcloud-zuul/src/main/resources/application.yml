@@ -1,0 +1,32 @@
+server:
+  port: 9100
+
+#注册到eureka服务堡列表中
+eureka:
+  client:
+    service-url:
+      defaultZone: http://eurekaserver8090.com:8090/eureka/,http://eurekaserver8091.com:8091/eureka/
+  instance:
+    instance-id: zuul-9100
+    prefer-ip-address: true
+
+spring:
+  application:
+    name: zuul-getway
+
+zuul:
+  #（可以选择不加）加上统一的公共前缀
+  prefix: /zy/
+  routes:
+    #真实服务隐藏,使http://192.168.1.101:9100/provider/xx不生效(provider小写),可以使用"*",忽略掉所有
+    ignored-services: provider
+    api-a:
+      #HTTP调用将/user转发到PROVIDER服务
+      path: /user/**
+      #大小写都可以
+      service-id: PROVIDER
+    api-b:
+      path: /xx/**
+      service-id: XXX
+
+

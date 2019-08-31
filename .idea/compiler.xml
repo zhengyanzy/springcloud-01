@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="springcloud-config" />
+        <module name="springcloud-consumer-81" />
+        <module name="springcloud-zuul" />
+        <module name="springcloud-api" />
+        <module name="springcloud-consumer" />
+        <module name="springcloud-hystrixdashboard" />
+        <module name="springcloud-eureka-server-8091" />
+        <module name="springcloud-eureka-server-8090" />
+        <module name="springcloud-provider-8082" />
+        <module name="springcloud-provider-8081" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="springcloud-api" target="1.8" />
+      <module name="springcloud-config" target="1.8" />
+      <module name="springcloud-consumer" target="1.8" />
+      <module name="springcloud-consumer-81" target="1.8" />
+      <module name="springcloud-depedences" target="1.8" />
+      <module name="springcloud-eureka-server-8090" target="1.8" />
+      <module name="springcloud-eureka-server-8091" target="1.8" />
+      <module name="springcloud-hystrixdashboard" target="1.8" />
+      <module name="springcloud-provider-8081" target="1.8" />
+      <module name="springcloud-provider-8082" target="1.8" />
+      <module name="springcloud-zuul" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="springcloud-api" options="-parameters" />
+      <module name="springcloud-config" options="-parameters" />
+      <module name="springcloud-consumer" options="-parameters" />
+      <module name="springcloud-consumer-81" options="-parameters" />
+      <module name="springcloud-eureka-server-8090" options="-parameters" />
+      <module name="springcloud-eureka-server-8091" options="-parameters" />
+      <module name="springcloud-hystrixdashboard" options="-parameters" />
+      <module name="springcloud-provider-8081" options="-parameters" />
+      <module name="springcloud-provider-8082" options="-parameters" />
+      <module name="springcloud-zuul" options="-parameters" />
+    </option>
+  </component>
+</project>

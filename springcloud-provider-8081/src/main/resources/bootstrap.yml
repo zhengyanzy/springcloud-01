@@ -1,0 +1,10 @@
+spring:
+  cloud:
+    config:
+      label: master
+      #没有后缀名
+      name: provider-8081
+      #如果 provider-8081.yml包含了多个配置,可以通过下面的配置
+      #profile: dev
+      #Config 服务端
+      uri: http://localhost:9200

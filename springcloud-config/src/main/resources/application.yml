@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: springcloud-config
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/zhengyanzy/springcloud-applicationConfig.git
+          username: zhengyanzy
+          password: 2014(zy)
+      #设置分支
+      label: master
+      profile: dev
+server:
+  port: 9200
+

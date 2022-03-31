@@ -23,7 +23,7 @@
         <java.version>1.8</java.version>
         <spring-boot.version>2.1.7.RELEASE</spring-boot.version>
         <spring-boot.mybatis.version>2.1.0</spring-boot.mybatis.version>
-        <spring-boot.web>2.1.7.RELEASE</spring-boot.web>
+        <spring-boot.web>2.5.12</spring-boot.web>
         <mysql-connect.version>8.0.17</mysql-connect.version>
         <eureka.version>2.1.2.RELEASE</eureka.version>
         <ribbon.version>2.1.2.RELEASE</ribbon.version>
